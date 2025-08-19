@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Counter from "./counter.model.js";
+import { Counter } from "./counter.model.js";
 
 const orderSchema = new mongoose.Schema({
   orderId: {
@@ -44,7 +44,7 @@ const orderSchema = new mongoose.Schema({
       required: true,
     },
     longitude: {
-      types: Number,
+      type: Number,
       required: true,
     },
     address: {
@@ -57,7 +57,7 @@ const orderSchema = new mongoose.Schema({
       required: true,
     },
     longitude: {
-      types: Number,
+      type: Number,
       required: true,
     },
     address: {
@@ -69,7 +69,7 @@ const orderSchema = new mongoose.Schema({
       type: Number,
     },
     longitude: {
-      types: Number,
+      type: Number,
     },
     address: {
       type: String,

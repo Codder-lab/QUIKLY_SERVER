@@ -1,4 +1,4 @@
-import { Customer, DeliveryPartner } from "../../models/user.model";
+import { Customer, DeliveryPartner } from "../../models/user.model.js";
 import jwt from "jsonwebtoken";
 
 const generateTokens = (user) => {
